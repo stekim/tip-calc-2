@@ -15,6 +15,7 @@
 		737221EE1D98DBEE00B3C375 /* tip_calc_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737221ED1D98DBEE00B3C375 /* tip_calc_2Tests.swift */; };
 		737221F91D98DBEE00B3C375 /* tip_calc_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737221F81D98DBEE00B3C375 /* tip_calc_2UITests.swift */; };
 		739B3A151D9BB4D5003A04E2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B3A141D9BB4D5003A04E2 /* SettingsViewController.swift */; };
+		739B3A171D9E158B003A04E2 /* Custom-Icon-Design-Flatastic-4-US-dollar.ico in Resources */ = {isa = PBXBuildFile; fileRef = 739B3A161D9E158B003A04E2 /* Custom-Icon-Design-Flatastic-4-US-dollar.ico */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		737221F81D98DBEE00B3C375 /* tip_calc_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tip_calc_2UITests.swift; sourceTree = "<group>"; };
 		737221FA1D98DBEE00B3C375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		739B3A141D9BB4D5003A04E2 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		739B3A161D9E158B003A04E2 /* Custom-Icon-Design-Flatastic-4-US-dollar.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = "Custom-Icon-Design-Flatastic-4-US-dollar.ico"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				737221DF1D98DBEE00B3C375 /* Assets.xcassets */,
 				737221E11D98DBEE00B3C375 /* LaunchScreen.storyboard */,
 				737221E41D98DBEE00B3C375 /* Info.plist */,
+				739B3A161D9E158B003A04E2 /* Custom-Icon-Design-Flatastic-4-US-dollar.ico */,
 			);
 			path = "tip calc 2";
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			files = (
 				737221E31D98DBEE00B3C375 /* LaunchScreen.storyboard in Resources */,
 				737221E01D98DBEE00B3C375 /* Assets.xcassets in Resources */,
+				739B3A171D9E158B003A04E2 /* Custom-Icon-Design-Flatastic-4-US-dollar.ico in Resources */,
 				737221DE1D98DBEE00B3C375 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

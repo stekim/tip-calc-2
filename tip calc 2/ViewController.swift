@@ -57,9 +57,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func calculateTip(sender: AnyObject) {
+           var tip_percentages = [0.18,0.2,0.22,0.3]
         
-        let tip_percentages = [0.18,0.2,0.22]
-
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if let stringf = defaults.stringForKey(SettingsViewController.key){
+            tip_percentages[3] = Double(Float(stringf)!.cleanValue)!/100
+        }
     
         let bill = Double(billField.text!) ?? 0
         let tip =  bill * tip_percentages[tipControl.selectedSegmentIndex]
