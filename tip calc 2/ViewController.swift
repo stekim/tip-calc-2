@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var billField: UITextField!
    
+    @IBOutlet weak var exclamationPhrases: UILabel!
     
     
     @IBAction func onTap(sender: AnyObject) {
@@ -67,7 +68,28 @@ class ViewController: UIViewController {
         billLabel.text = "$\(bill)"
         tipLabel.text = "$\(tip)"
         totalLabel.text = "$\(total)"
-
+        
+        if tipControl.selectedSegmentIndex == 0{
+            UIView.animateWithDuration(0.5, animations:{ self.exclamationPhrases.alpha = 1.0
+            })
+            exclamationPhrases.text = "Nice!"
+            UIView.animateWithDuration(0.5, animations:{ self.exclamationPhrases.alpha = 0
+            })
+        }
+        else if tipControl.selectedSegmentIndex == 1{
+            UIView.animateWithDuration(0.5, animations:{ self.exclamationPhrases.alpha = 1.0
+            })
+            exclamationPhrases.text = "wOw!"
+            UIView.animateWithDuration(0.5, animations:{ self.exclamationPhrases.alpha = 0
+            })
+        }
+        else if tipControl.selectedSegmentIndex == 2{
+            UIView.animateWithDuration(0.5, animations:{ self.exclamationPhrases.alpha = 1.0
+            })
+            exclamationPhrases.text = "Sugoi Senpai!!"
+            UIView.animateWithDuration(0.5, animations:{ self.exclamationPhrases.alpha = 0
+            })
+        }
         
 
     }
