@@ -131,10 +131,17 @@
                                 <rect key="frame" x="192" y="393" width="16" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The tip split equally is " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eje-XJ-rzs">
-                                <rect key="frame" x="20" y="450" width="215" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The bill split equally is " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eje-XJ-rzs">
+                                <rect key="frame" x="20" y="450" width="188" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9Ji-bJ-Z1O">
+                                <rect key="frame" x="201" y="450" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -161,6 +168,7 @@
                         <outlet property="personIcon2" destination="xjY-MI-TaF" id="9oF-QV-GaD"/>
                         <outlet property="personIcon3" destination="1w5-NT-27n" id="DKB-cW-7zm"/>
                         <outlet property="splitBill" destination="9Rh-ZC-lhh" id="tU9-6x-chQ"/>
+                        <outlet property="splittedTip" destination="9Ji-bJ-Z1O" id="6xV-nM-ZBm"/>
                         <outlet property="thetipsplitLabel" destination="eje-XJ-rzs" id="Ta6-O7-MTY"/>
                         <outlet property="tipControl" destination="UGh-uV-t5i" id="McY-2x-Nk9"/>
                         <outlet property="tipLabel" destination="h5j-7H-ega" id="rSD-9R-Fij"/>

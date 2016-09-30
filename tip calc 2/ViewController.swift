@@ -30,6 +30,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var splitBill: UITextField!
     
     @IBOutlet weak var thetipsplitLabel: UILabel!
+    @IBOutlet weak var splittedTip: UILabel!
     
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
@@ -109,6 +110,22 @@ class ViewController: UIViewController {
     }
     
     @IBAction func splitBill(sender: AnyObject) {
+        var tip_percentages = [0.18,0.2,0.22,0.3]
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if let stringf = defaults.stringForKey(SettingsViewController.key){
+            tip_percentages[3] = Double((Float(stringf)!/100).cleanValue)!
+        }
+        
+        let bill = Double(billField.text!) ?? 0
+        let tip =  bill * tip_percentages[tipControl.selectedSegmentIndex]
+        let total = bill + tip
+        
+        UIView.animateWithDuration(0.5, animations:{ self.thetipsplitLabel.alpha = 1.0
+        })
+        UIView.animateWithDuration(0.5, animations:{ self.splittedTip.alpha = 1.0
+        })
+        splittedTip.text! = "$\(String(total / Double(splitBill.text!)!))"
         if splitBill.text! == "2"{
             UIView.animateWithDuration(0.5, animations:{ self.personIcon1.alpha = 1.0
     })
