@@ -17,7 +17,8 @@
 		739B3A151D9BB4D5003A04E2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B3A141D9BB4D5003A04E2 /* SettingsViewController.swift */; };
 		739B3A171D9E158B003A04E2 /* Custom-Icon-Design-Flatastic-4-US-dollar.ico in Resources */ = {isa = PBXBuildFile; fileRef = 739B3A161D9E158B003A04E2 /* Custom-Icon-Design-Flatastic-4-US-dollar.ico */; };
 		739B3A191D9E191F003A04E2 /* person-symbol-clip-art-clipart-panda-free-clipart-images-QxdUUM-clipart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 739B3A181D9E191F003A04E2 /* person-symbol-clip-art-clipart-panda-free-clipart-images-QxdUUM-clipart.jpg */; };
-		739B3A1B1D9E1C10003A04E2 /* kTMnKXazc.png in Resources */ = {isa = PBXBuildFile; fileRef = 739B3A1A1D9E1C10003A04E2 /* kTMnKXazc.png */; };
+		739B3A1D1D9E42F5003A04E2 /* kTMnKXazc.png in Resources */ = {isa = PBXBuildFile; fileRef = 739B3A1C1D9E42F5003A04E2 /* kTMnKXazc.png */; };
+		739B3A971D9F160A003A04E2 /* DrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B3A961D9F160A003A04E2 /* DrinkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +55,8 @@
 		739B3A141D9BB4D5003A04E2 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		739B3A161D9E158B003A04E2 /* Custom-Icon-Design-Flatastic-4-US-dollar.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = "Custom-Icon-Design-Flatastic-4-US-dollar.ico"; sourceTree = "<group>"; };
 		739B3A181D9E191F003A04E2 /* person-symbol-clip-art-clipart-panda-free-clipart-images-QxdUUM-clipart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "person-symbol-clip-art-clipart-panda-free-clipart-images-QxdUUM-clipart.jpg"; sourceTree = "<group>"; };
-		739B3A1A1D9E1C10003A04E2 /* kTMnKXazc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kTMnKXazc.png; sourceTree = "<group>"; };
+		739B3A1C1D9E42F5003A04E2 /* kTMnKXazc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kTMnKXazc.png; path = ../kTMnKXazc.png; sourceTree = "<group>"; };
+		739B3A961D9F160A003A04E2 /* DrinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,11 +87,11 @@
 		737221CC1D98DBEE00B3C375 = {
 			isa = PBXGroup;
 			children = (
+				739B3A961D9F160A003A04E2 /* DrinkViewController.swift */,
 				737221D71D98DBEE00B3C375 /* tip calc 2 */,
 				737221EC1D98DBEE00B3C375 /* tip calc 2Tests */,
 				737221F71D98DBEE00B3C375 /* tip calc 2UITests */,
 				737221D61D98DBEE00B3C375 /* Products */,
-				739B3A1A1D9E1C10003A04E2 /* kTMnKXazc.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +117,7 @@
 				737221E11D98DBEE00B3C375 /* LaunchScreen.storyboard */,
 				737221E41D98DBEE00B3C375 /* Info.plist */,
 				739B3A161D9E158B003A04E2 /* Custom-Icon-Design-Flatastic-4-US-dollar.ico */,
+				739B3A1C1D9E42F5003A04E2 /* kTMnKXazc.png */,
 			);
 			path = "tip calc 2";
 			sourceTree = "<group>";
@@ -242,7 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				737221E31D98DBEE00B3C375 /* LaunchScreen.storyboard in Resources */,
-				739B3A1B1D9E1C10003A04E2 /* kTMnKXazc.png in Resources */,
+				739B3A1D1D9E42F5003A04E2 /* kTMnKXazc.png in Resources */,
 				737221E01D98DBEE00B3C375 /* Assets.xcassets in Resources */,
 				739B3A171D9E158B003A04E2 /* Custom-Icon-Design-Flatastic-4-US-dollar.ico in Resources */,
 				739B3A191D9E191F003A04E2 /* person-symbol-clip-art-clipart-panda-free-clipart-images-QxdUUM-clipart.jpg in Resources */,
@@ -274,6 +277,7 @@
 				737221DB1D98DBEE00B3C375 /* ViewController.swift in Sources */,
 				737221D91D98DBEE00B3C375 /* AppDelegate.swift in Sources */,
 				739B3A151D9BB4D5003A04E2 /* SettingsViewController.swift in Sources */,
+				739B3A971D9F160A003A04E2 /* DrinkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -152,4 +152,13 @@ class ViewController: UIViewController {
             })
         }
 }
+    static let predrinkTotal = "predrinkTotal"
+    
+    @IBAction func drinkcomplicationButton(sender: AnyObject) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject(totalLabel.text, forKey: ViewController.predrinkTotal)
+        defaults.synchronize()
+        
+    }
+    
 }
