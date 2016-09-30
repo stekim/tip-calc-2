@@ -23,7 +23,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var billField: UITextField!
    
     @IBOutlet weak var exclamationPhrases: UILabel!
+    @IBOutlet weak var personIcon1: UIImageView!
+    @IBOutlet weak var personIcon2: UIImageView!
+    @IBOutlet weak var personIcon3: UIImageView!
+    @IBOutlet weak var perosnIcon4: UIImageView!
+    @IBOutlet weak var splitBill: UITextField!
     
+    @IBOutlet weak var thetipsplitLabel: UILabel!
     
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
@@ -61,7 +67,7 @@ class ViewController: UIViewController {
         
         let defaults = NSUserDefaults.standardUserDefaults()
         if let stringf = defaults.stringForKey(SettingsViewController.key){
-            tip_percentages[3] = Double(Float(stringf)!.cleanValue)!/100
+            tip_percentages[3] = Double((Float(stringf)!/100).cleanValue)!
         }
     
         let bill = Double(billField.text!) ?? 0
@@ -82,20 +88,50 @@ class ViewController: UIViewController {
         else if tipControl.selectedSegmentIndex == 1{
             UIView.animateWithDuration(0.5, animations:{ self.exclamationPhrases.alpha = 1.0
             })
-            exclamationPhrases.text = "wOw!"
+            exclamationPhrases.text = "Wow!"
             UIView.animateWithDuration(0.5, animations:{ self.exclamationPhrases.alpha = 0
             })
         }
         else if tipControl.selectedSegmentIndex == 2{
             UIView.animateWithDuration(0.5, animations:{ self.exclamationPhrases.alpha = 1.0
             })
+            exclamationPhrases.text = "Good Job!"
+            UIView.animateWithDuration(0.5, animations:{ self.exclamationPhrases.alpha = 0
+            })
+        }
+        else if tipControl.selectedSegmentIndex == 3{
+            UIView.animateWithDuration(0.5, animations:{ self.exclamationPhrases.alpha = 1.0
+            })
             exclamationPhrases.text = "Sugoi Senpai!!"
             UIView.animateWithDuration(0.5, animations:{ self.exclamationPhrases.alpha = 0
             })
         }
-        
-
     }
-
+    
+    @IBAction func splitBill(sender: AnyObject) {
+        if splitBill.text! == "2"{
+            UIView.animateWithDuration(0.5, animations:{ self.personIcon1.alpha = 1.0
+    })
+            UIView.animateWithDuration(0.5, animations:{ self.personIcon2.alpha = 1.0
+            })
+    }
+        if splitBill.text! == "3"{
+            UIView.animateWithDuration(0.5, animations:{ self.personIcon1.alpha = 1.0
+            })
+            UIView.animateWithDuration(0.5, animations:{ self.personIcon2.alpha = 1.0
+            })
+            UIView.animateWithDuration(0.5, animations:{ self.personIcon3.alpha = 1.0
+            })
+        }
+        if splitBill.text! == "4"{
+            UIView.animateWithDuration(0.5, animations:{ self.personIcon1.alpha = 1.0
+            })
+            UIView.animateWithDuration(0.5, animations:{ self.personIcon2.alpha = 1.0
+            })
+            UIView.animateWithDuration(0.5, animations:{ self.personIcon3.alpha = 1.0
+            })
+            UIView.animateWithDuration(0.5, animations:{ self.perosnIcon4.alpha = 1.0
+            })
+        }
 }
-
+}

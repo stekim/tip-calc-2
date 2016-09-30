@@ -78,6 +78,13 @@
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="gZp-2y-ksH"/>
                                 </connections>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sDE-GE-i8H">
+                                <rect key="frame" x="83" y="171" width="74" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UZB-ho-5kH">
                                 <rect key="frame" x="70" y="293" width="181" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -85,11 +92,50 @@
                                 <color key="textColor" red="0.99002671100841477" green="0.080725844610472386" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sDE-GE-i8H">
-                                <rect key="frame" x="83" y="171" width="74" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nCn-nX-XSW">
+                                <rect key="frame" x="20" y="393" width="53" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                <color key="textColor" red="0.16408361972875202" green="0.15838906291161078" blue="0.89594240837696337" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person-symbol-clip-art-clipart-panda-free-clipart-images-QxdUUM-clipart.jpg" id="17o-lG-urb">
+                                <rect key="frame" x="138" y="393" width="16" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="9Rh-ZC-lhh">
+                                <rect key="frame" x="97" y="389" width="33" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DXl-zp-0AF">
+                                <rect key="frame" x="228" y="393" width="85" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Bill Split">
+                                    <color key="titleColor" red="0.16408361969999999" green="0.15838906289999999" blue="0.89594240839999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="splitBill:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UGN-wy-gAL"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kTMnKXazc.png" id="xjY-MI-TaF">
+                                <rect key="frame" x="156" y="393" width="16" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person-symbol-clip-art-clipart-panda-free-clipart-images-QxdUUM-clipart.jpg" id="1w5-NT-27n">
+                                <rect key="frame" x="174" y="393" width="16" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kTMnKXazc.png" id="2lQ-PX-HpA">
+                                <rect key="frame" x="192" y="393" width="16" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The tip split equally is " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eje-XJ-rzs">
+                                <rect key="frame" x="20" y="450" width="215" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -110,6 +156,12 @@
                         <outlet property="billField" destination="se5-ux-z9r" id="nj8-X5-mdK"/>
                         <outlet property="billLabel" destination="LOL-JB-wIV" id="m2Y-jV-xsN"/>
                         <outlet property="exclamationPhrases" destination="UZB-ho-5kH" id="Xpj-Nm-qfi"/>
+                        <outlet property="perosnIcon4" destination="2lQ-PX-HpA" id="O6b-T0-cZV"/>
+                        <outlet property="personIcon1" destination="17o-lG-urb" id="JG2-ZY-Uid"/>
+                        <outlet property="personIcon2" destination="xjY-MI-TaF" id="9oF-QV-GaD"/>
+                        <outlet property="personIcon3" destination="1w5-NT-27n" id="DKB-cW-7zm"/>
+                        <outlet property="splitBill" destination="9Rh-ZC-lhh" id="tU9-6x-chQ"/>
+                        <outlet property="thetipsplitLabel" destination="eje-XJ-rzs" id="Ta6-O7-MTY"/>
                         <outlet property="tipControl" destination="UGh-uV-t5i" id="McY-2x-Nk9"/>
                         <outlet property="tipLabel" destination="h5j-7H-ega" id="rSD-9R-Fij"/>
                         <outlet property="tipPercentage" destination="sDE-GE-i8H" id="zef-jz-bve"/>
@@ -197,4 +249,8 @@
             <point key="canvasLocation" x="162" y="366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kTMnKXazc.png" width="402" height="592"/>
+        <image name="person-symbol-clip-art-clipart-panda-free-clipart-images-QxdUUM-clipart.jpg" width="246" height="425"/>
+    </resources>
 </document>
