@@ -12,31 +12,44 @@ class SettingsViewController: UIViewController {
 
     @IBOutlet weak var newTip: UITextField!
     
+    static let key = "key"
+    static let key2 = "key2"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.setObject(newTip.text, forKey: "newTip")
-        defaults.setInteger(123, forKey: "fake_int")
-        defaults.synchronize()
 
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+
+    @IBAction func saveTip(sender: AnyObject) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject(newTip.text, forKey: SettingsViewController.key)
+        defaults.setInteger(123, forKey: SettingsViewController.key2)
+        defaults.synchronize()
+    }
+
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if let stringf = defaults.stringForKey(SettingsViewController.key){
+            print(stringf)
+        }
+        if let intf = defaults.stringForKey(SettingsViewController.key2){
+            print(intf)
+        }
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func onTap(sender: AnyObject) {
+        view.endEditing(true)
     }
-    */
+
+    
+    
 
 }

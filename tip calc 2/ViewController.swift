@@ -7,6 +7,11 @@
 //
 
 import UIKit
+extension Float {
+    var cleanValue: String {
+        return self % 1 == 0 ? String(format: "%.0f", self) : String(self)
+    }
+}
 
 class ViewController: UIViewController {
     @IBOutlet weak var billLabel: UILabel!
@@ -18,25 +23,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var billField: UITextField!
    
     
+    
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         
     }
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
         let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.synchronize()
-        let tValue = defaults.objectForKey("newTip")
-        let intValue = defaults.integerForKey("fake_int")
-        print ("this is the int ", intValue)
-        print ("this is the string", tValue)
+        if let stringf = defaults.stringForKey(SettingsViewController.key){
+            tipPercentage.text = stringf
+        }
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+
         
-        print("view did appear")
     }
     
 
@@ -48,9 +57,12 @@ class ViewController: UIViewController {
     @IBAction func calculateTip(sender: AnyObject) {
         
         let tip_percentages = [0.18,0.2,0.22]
+
+    
         let bill = Double(billField.text!) ?? 0
         let tip =  bill * tip_percentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
+        tipPercentage.text = (String((Float(tip_percentages[tipControl.selectedSegmentIndex])*100).cleanValue))+"%"
         billLabel.text = "$\(bill)"
         tipLabel.text = "$\(tip)"
         totalLabel.text = "$\(total)"
