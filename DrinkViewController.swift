@@ -47,12 +47,12 @@ class DrinkViewController: UIViewController {
             billAgain = stringf
         }
         
-        let drunkPpl = Float(drunkpeopleField.text!)
-        let soberPpl = Float(soberpeopleField.text!)
-        let costDrinks = Float(costofdrinkField.text!)
-        let totBill = Float(totalBill.text!)
+        var drunkPpl = Float(drunkpeopleField.text!)
+        var soberPpl = Float(soberpeopleField.text!)
+        var costDrinks = Float(costofdrinkField.text!)
+        var totBill = Float(totalBill.text!)
         
-        nondrinkerbillLabel.text = String((Float(billAgain)))
+        nondrinkerbillLabel.text = (String(Float(billAgain)))
         
         drinkerbillLabel.text = nondrinkerbillLabel.text
     }
