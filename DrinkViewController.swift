@@ -38,15 +38,33 @@ class DrinkViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func calculateseparateButton(sender: AnyObject) {
+        
+        var billAgain = "string"
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if let stringf = defaults.stringForKey(ViewController.predrinkTotal){
+            billAgain = stringf
+        }
+        
+        let drunkPpl = Float(drunkpeopleField.text!)
+        let soberPpl = Float(soberpeopleField.text!)
+        let costDrinks = Float(costofdrinkField.text!)
+        let totBill = Float(totalBill.text!)
+        
+        nondrinkerbillLabel.text = String((Float(billAgain)))
+        
+        drinkerbillLabel.text = nondrinkerbillLabel.text
     }
-    */
+  
+    @IBAction func onTap(sender: AnyObject) {
+        view.endEditing(true)
+    }
+  
 
 }
+
+
+
+
+
